@@ -50,16 +50,16 @@ task = BashOperator(
 
 - Airflow에서 사용가능한 jinja들 : https://airflow.apache.org/docs/apache-airflow/stable/templates-ref.html
 
-| {{ ds }} | 연도-월-일 |
+| ```{{ ds }}``` | 연도-월-일 |
 | --- | --- |
-| {{ ds_nodash }} | 대시없이 ds 출력 |
-| {{ ts }} | 연도-월-일-시-분-초 |
-| {{ dag }} | dag이름 |
-| {{ task }} | task에 대한 정보 |
-| {{ dag_run }} |  |
-| {{ var.value}}: {{ var.value.get(’my.var’, ‘fallback’) }} | Variable 읽어오기 (value) |
-| {{ var.json }}: {{ var.json.my_dict_var.key1 }} | Variable 읽어오기 (json) |
-| {{ conn }}: {{ conn.my_conn_id.login }}, {{ conn.my_conn_id.password } | Connection 생성 |
+| ```{{ ds_nodash }}``` | 대시없이 ds 출력 |
+| ```{{ ts }}``` | 연도-월-일-시-분-초 |
+| ```{{ dag }}``` | dag이름 |
+| ```{{ task }}``` | task에 대한 정보 |
+| ```{{ dag_run }}``` |  |
+| ```{{ var.value}}: {{ var.value.get(’my.var’, ‘fallback’) }}``` | Variable 읽어오기 (value) |
+| ```{{ var.json }}: {{ var.json.my_dict_var.key1 }}``` | Variable 읽어오기 (json) |
+| ```{{ conn }}: {{ conn.my_conn_id.login }}, {{ conn.my_conn_id.password }}``` | Connection 생성 |
 
 ---
 
