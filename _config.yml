@@ -56,7 +56,7 @@ menu:
     url:               /dataengineering/
     submenu:
       - title:         데브코스
-        url:           /dataengineering/camp/
+        url:           /camp/
 
 
 # Add links to the footer.
