@@ -303,6 +303,6 @@ for f in os.listdir(file_dir): # 파일 디렉토리 내에서 모든 파일 읽
 
 ### jekyll에서 jinja 출력하기...
 : 다음 블로그 참고한다.. <br>
-[{% raw %}jekyll에서 {{ }}, {% %}사용하기(escape liquid template)% endraw %}](https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html)
+[{% raw %}jekyll에서 {{ }}, {% %}사용하기(escape liquid template){% endraw %}](https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html)
 
 
