@@ -60,7 +60,7 @@ menu:
     url:               /project1/
     submenu:
       - title:         subproject
-        url:           /subproject/
+        url:           /project1/subproject/
 
 
 # Add links to the footer.
