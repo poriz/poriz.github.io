@@ -6,7 +6,7 @@ layout: list
 title: 데브코스
 
 # The name of the tag, used in a post's front matter (e.g. tags: [<slug>]).
-slug: 데브코스
+slug: camp
 
 # (Optional) Write a short (~150 characters) description of this featured tag.
 description: >
