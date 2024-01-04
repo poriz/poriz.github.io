@@ -49,7 +49,7 @@ task = BashOperator(
 
 [Operators — Airflow Documentation](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/operators.html)
 
-- Airflow에서 사용가능한 jinja들 : https://airflow.apache.org/docs/apache-airflow/stable/templates-ref.html
+- Airflow에서 사용가능한 jinja들 : [airflow_jinja_docs](https://airflow.apache.org/docs/apache-airflow/stable/templates-ref.html)
 
 
 | {% raw %} {{ ds }} {% endraw %} | 연도-월-일 |
