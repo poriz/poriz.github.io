@@ -93,7 +93,7 @@ trigger_task = TriggerDagRunOperator(
 # targetDAG
 task1 = BashOperator(
 	...
-	bash_command ={% raw %} """echo '{{ds}}, {{ dag_run.conf.get("name","none")' """ {% endraw %}
+	bash_command ={% raw %} """echo '{{ds}}, {{ dag_run.conf.get("name","none")}}' """ {% endraw %}
 )
 ```
 
@@ -302,6 +302,7 @@ for f in os.listdir(file_dir): # 파일 디렉토리 내에서 모든 파일 읽
 ```
 
 ### jekyll에서 jinja 출력하기...
-: 다음 블로그 참고한다.. https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html
+: 다음 블로그 참고한다.. <br>
+[{% raw %}jekyll에서 {{ }}, {% %}사용하기(escape liquid template)% endraw %}](https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html)
 
 
