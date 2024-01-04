@@ -57,10 +57,10 @@ menu:
   - title:             About
     url:               /about/
   - title:             DataEngineering
-    url:               /DataEngineering/
+    url:               /dataengineering/
     submenu:
       - title:         데브코스
-        url:           /DataEngineering/데브코스/
+        url:           /dataengineering/데브코스/
 
 
 # Add links to the footer.
