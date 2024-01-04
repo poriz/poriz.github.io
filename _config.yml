@@ -57,7 +57,7 @@ menu:
     submenu:
       - title:         데브코스
         url:           /camp/
-  - title:             TIL
+  - title:             til
     url:               /til/
 
 
