@@ -12,15 +12,15 @@ categorys:
 ## Jinja Template
 
 : python에서 널리 사용되는 템플릿 엔진이다. Django 템플릿 엔진에서 영감을 받아 개발되었다고 한다. 현재는 Flask에서 많이 사용된다고 한다.
-{% raw %}
-- 변수를 이중 중괄호로 감싸 사용 `<h1>name: {{name}}<h1>`
+
+- 변수를 이중 중괄호로 감싸 사용 `<h1>name: {% raw %}{{name}}{% endraw %}<h1>`
 - 제어문은 퍼센트 기호를 사용한다.
 
 ```python
 # 반복문 예시
-{% for item in items %}
+{% raw %} {% for item in items %} {% endraw %}
 	...
-{% endfor %}
+{% raw %} {% endfor %} {% endraw %}
 ```
 
 
@@ -301,4 +301,4 @@ for f in os.listdir(file_dir): # 파일 디렉토리 내에서 모든 파일 읽
 				f.write(template.render(config))
 ```
 
-{% endraw %}
+
