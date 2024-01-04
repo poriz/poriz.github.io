@@ -1,6 +1,6 @@
 ---
 layout: list
-title: Today I Learned
+title: TIL
 slug: til
 
 description: >
