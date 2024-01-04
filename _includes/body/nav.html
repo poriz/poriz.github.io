@@ -25,7 +25,6 @@
             <input type="checkbox" id="folder-checkbox-{{count}}">
             <ul>
             {% for subnode in node.submenu %}
-              {% assign subnode_url = node.url | append: subnode.url %}
               <li>
                 <a
                   class="sidebar-nav-item {% if node.external  %}external{% endif %}"
