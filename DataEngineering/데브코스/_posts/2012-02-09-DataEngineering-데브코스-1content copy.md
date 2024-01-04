@@ -1,8 +1,6 @@
 ---
 layout: post
-related_posts:
-  - /project1/subproject/
-title: Example Content2
+title: 데브코스 1
 description: >
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 sitemap: false
