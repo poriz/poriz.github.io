@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Snowflake
-tags: [Snowflake, DataWarehouse]
 sitemap: false
 
 ---
