@@ -57,6 +57,8 @@ menu:
     submenu:
       - title:         데브코스
         url:           /camp/
+  - title:             TIL
+    url:               /TIL/
 
 
 # Add links to the footer.
