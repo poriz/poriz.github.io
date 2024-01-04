@@ -10,7 +10,7 @@ url:                   https://poriz.github.io
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
 baseurl:               ''
-# favicon:               /assetes/img/icons/favicon.ico
+favicon:               /assetes/img/icons/favicon.ico
 
 # General settings
 # ---------------------------------------------------------------------------------------
