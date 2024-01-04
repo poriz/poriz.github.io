@@ -28,14 +28,14 @@ categorys:
 
 : 작업 이름, 파라미터 또는 SQL 쿼리와같은 작업 매개변수를 템플릿화된 문자열로 정의 할 수 있다.
 
-- execution_date를 코드 내에서 쉽게 사용 가능하다. : `{{ ds }}`
+- execution_date를 코드 내에서 쉽게 사용 가능하다. : {% raw %}`{{ ds }}`{% endraw %}
 - BashOperator에서의 사용 방식 → bash_command에서 jinja사용 가능
 
 ```python
 # params를 활용해서 사용도 가능하다.
 task = BashOperator(
 	...
-	bash_command='echo "test,{{params.name}}"",
+	bash_command='echo "test,{% raw %} {{params.name}}{% endraw %}"",
 	params={'name':'pori'},
 	dag=dag
 )
@@ -52,16 +52,16 @@ task = BashOperator(
 - Airflow에서 사용가능한 jinja들 : https://airflow.apache.org/docs/apache-airflow/stable/templates-ref.html
 
 
-| {{ ds }} | 연도-월-일 |
+| {% raw %} {{ ds }} {% endraw %} | 연도-월-일 |
 | --- | --- |
-| {{ ds_nodash }} | 대시없이 ds 출력 |
-| {{ ts }} | 연도-월-일-시-분-초 |
-| {{ dag }} | dag이름 |
-| {{ task }} | task에 대한 정보 |
-| {{ dag_run }} |  |
-| {{ var.value}}: {{ var.value.get(’my.var’, ‘fallback’) }} | Variable 읽어오기 (value) |
-| {{ var.json }}: {{ var.json.my_dict_var.key1 }} | Variable 읽어오기 (json) |
-| {{ conn }}: {{ conn.my_conn_id.login }}, {{ conn.my_conn_id.password }} | Connection 생성 |
+| {% raw %} {{ ds_nodash }} {% endraw %} | 대시없이 ds 출력 |
+| {% raw %} {{ ts }} {% endraw %} | 연도-월-일-시-분-초 |
+| {% raw %} {{ dag }} {% endraw %} | dag이름 |
+| {% raw %} {{ task }} {% endraw %} | task에 대한 정보 |
+| {% raw %} {{ dag_run }} {% endraw %} |  |
+| {% raw %} {{ var.value}}: {{ var.value.get(’my.var’, ‘fallback’) }} {% endraw %} | Variable 읽어오기 (value) |
+| {% raw %} {{ var.json }}: {{ var.json.my_dict_var.key1 }} {% endraw %} | Variable 읽어오기 (json) |
+| {% raw %} {{ conn }}: {{ conn.my_conn_id.login }}, {{ conn.my_conn_id.password }} {% endraw %} | Connection 생성 |
 
 
 ---
@@ -86,14 +86,14 @@ task = BashOperator(
 trigger_task = TriggerDagRunOperator(
 	...
 	conf = {...}
-	execution_date = '{{ ds }}'
+	execution_date = {% raw %} '{{ ds }}' {% endraw %}
 	...
 	dag=dag
 )
 # targetDAG
 task1 = BashOperator(
 	...
-	bash_command ="""echo '{{ds}}, {{ dag_run.conf.get("name","none")' """
+	bash_command ={% raw %} """echo '{{ds}}, {{ dag_run.conf.get("name","none")' """ {% endraw %}
 )
 ```
 
@@ -259,10 +259,10 @@ from airflow import DAG
 from airflow.decorators import task
 from datetime import datetime
 
-with DAG(dag_id="get_price_{{ dag_id }}",
+with DAG(dag_id={% raw %}"get_price_{{ dag_id }}"{% endraw %},
 	start_date = ...
-	schedule = '{{ schedule }}",
-	catchup = {{ catchup or True }} # catchup을 사용하거나 값이 없으면 True로 설정
+	schedule = {% raw %}'{{ schedule }}" {% endraw %},
+	catchup = {% raw %}{{ catchup or True }} {% endraw %} # catchup을 사용하거나 값이 없으면 True로 설정
 ) as dag:
 
 @task
@@ -276,7 +276,7 @@ def process(symbol):
 def store(symbol):
 		return symbol
 
-store(process(extract("{{ symbol }}")))
+store(process(extract({% raw %} "{{ symbol }}" {% endraw %})))
 ```
 
 - generator
@@ -300,5 +300,8 @@ for f in os.listdir(file_dir): # 파일 디렉토리 내에서 모든 파일 읽
 				# yml로 읽은 것을 template에 render 한 후 파일에 쓰는 작업 수행
 				f.write(template.render(config))
 ```
+
+### jekyll에서 jinja 출력하기...
+: 다음 블로그 참고한다.. https://atomic0x90.github.io/jekyll/markdown/2019/06/08/escape-liquid-template.html
 
 
