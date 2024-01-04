@@ -12,7 +12,7 @@ categorys:
 ## Jinja Template
 
 : python에서 널리 사용되는 템플릿 엔진이다. Django 템플릿 엔진에서 영감을 받아 개발되었다고 한다. 현재는 Flask에서 많이 사용된다고 한다.
-
+{% raw %}
 - 변수를 이중 중괄호로 감싸 사용 `<h1>name: {{name}}<h1>`
 - 제어문은 퍼센트 기호를 사용한다.
 
@@ -22,6 +22,7 @@ categorys:
 	...
 {% endfor %}
 ```
+
 
 ### Jinja + Airflow
 
@@ -50,16 +51,18 @@ task = BashOperator(
 
 - Airflow에서 사용가능한 jinja들 : https://airflow.apache.org/docs/apache-airflow/stable/templates-ref.html
 
-| ```{{ ds }}``` | 연도-월-일 |
+
+| {{ ds }} | 연도-월-일 |
 | --- | --- |
-| ```{{ ds_nodash }}``` | 대시없이 ds 출력 |
-| ```{{ ts }}``` | 연도-월-일-시-분-초 |
-| ```{{ dag }}``` | dag이름 |
-| ```{{ task }}``` | task에 대한 정보 |
-| ```{{ dag_run }}``` |  |
-| ```{{ var.value}}: {{ var.value.get(’my.var’, ‘fallback’) }}``` | Variable 읽어오기 (value) |
-| ```{{ var.json }}: {{ var.json.my_dict_var.key1 }}``` | Variable 읽어오기 (json) |
-| ```{{ conn }}: {{ conn.my_conn_id.login }}, {{ conn.my_conn_id.password }}``` | Connection 생성 |
+| {{ ds_nodash }} | 대시없이 ds 출력 |
+| {{ ts }} | 연도-월-일-시-분-초 |
+| {{ dag }} | dag이름 |
+| {{ task }} | task에 대한 정보 |
+| {{ dag_run }} |  |
+| {{ var.value}}: {{ var.value.get(’my.var’, ‘fallback’) }} | Variable 읽어오기 (value) |
+| {{ var.json }}: {{ var.json.my_dict_var.key1 }} | Variable 읽어오기 (json) |
+| {{ conn }}: {{ conn.my_conn_id.login }}, {{ conn.my_conn_id.password }} | Connection 생성 |
+
 
 ---
 
@@ -297,3 +300,5 @@ for f in os.listdir(file_dir): # 파일 디렉토리 내에서 모든 파일 읽
 				# yml로 읽은 것을 template에 render 한 후 파일에 쓰는 작업 수행
 				f.write(template.render(config))
 ```
+
+{% endraw %}
