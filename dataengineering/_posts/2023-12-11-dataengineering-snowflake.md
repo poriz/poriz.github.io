@@ -2,7 +2,7 @@
 layout: post
 title: Snowflake
 sitemap: false
-
+comments: true
 ---
 # snowflake 정리
 : 프로젝트를 진행하며 snowflake를 이용해 데이터 웨어하우스를 구축하였고, 시행착오와 팁들을 정리한다.

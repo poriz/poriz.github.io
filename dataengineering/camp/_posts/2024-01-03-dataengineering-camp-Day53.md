@@ -2,6 +2,7 @@
 layout: post
 title: 데브코스 53일차 - Jinja, Dag Dependencies
 sitemap: false
+comments: true
 categorys:
   - dataengineering
   - camp
