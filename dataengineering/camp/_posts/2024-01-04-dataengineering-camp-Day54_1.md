@@ -44,3 +44,10 @@ categorys:
     - FiveTran
     - Stitch Data
     - Segment
+
+
+---
+### 이전 포스트
+- [데브코스 53일차 - Jinja, Dag Dependencies](https://poriz.github.io/dataengineering/camp/2024-01-03-dataengineering-camp-Day53/)
+### 다음 포스트
+- [데브코스 54일차(2) - DBT (Data Build Tool)](https://poriz.github.io/dataengineering/camp/2024-01-04-dataengineering-camp-Day54_2/)

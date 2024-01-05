@@ -145,3 +145,9 @@ models:
 ### dbt 명령어
 - dbt compile : SQL 코드 까지만 생성하고 실행하지는 않는다.
 - dbt run : 생성된 코드를 실제 실행한다.
+
+---
+### 이전 포스트
+- [데브코스 54일차(2) - DBT (Data Build Tool)](https://poriz.github.io/dataengineering/camp/2024-01-04-dataengineering-camp-Day54_2/)
+<!-- ### 다음 포스트
+-  -->
