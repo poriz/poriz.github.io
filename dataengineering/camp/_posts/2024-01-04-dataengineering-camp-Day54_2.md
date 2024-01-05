@@ -13,7 +13,6 @@ categorys:
     - 데이터 품질을 유지하는것은 비용,노력의 감소와 생산성 증대의 지름길이다.
 
 ## DB Normalization
-
 : 데이터베이스를 좀 더 조직적이고, 일관된 방법으로 디자인하는 방법 (수정,적재,삭제의 용이)
 
 - 1정규화
@@ -30,7 +29,6 @@ categorys:
 참고: [정규화 정리 블로그](https://mr-dan.tistory.com/10)
 
 ## Slowly Changing Dimensions
-
 - DW나 DL에서는 모든 테이블들의 히스토리를 유지하는 것이 중요하다.
     - 생성시간과 수정시간 두개의 timestamp필드를 갖는 것이 좋다.
     - 칼럼의 성격에따라서 유지 방법에 차이가 난다. (SCD Type으로 관리)
@@ -79,6 +77,7 @@ clean-targets:
 models:
   learn_dbt:
 ```
+
 ## DBT Input
 
 ### Model : 테이블 생성에 있어 기본이 되는 빌딩 블록
