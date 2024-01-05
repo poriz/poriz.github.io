@@ -261,8 +261,9 @@ from datetime import datetime
 
 with DAG(dag_id={% raw %}"get_price_{{ dag_id }}"{% endraw %},
 	start_date = ...
-	schedule = {% raw %}'{{ schedule }}" {% endraw %},
-	catchup = {% raw %}{{ catchup or True }} {% endraw %} # catchup을 사용하거나 값이 없으면 True로 설정
+	schedule = {% raw %}"{{ schedule }}" {% endraw %},
+	catchup = {% raw %}{{ catchup or True }} {% endraw %} 
+	# catchup을 사용하거나 값이 없으면 True로 설정
 ) as dag:
 
 @task
