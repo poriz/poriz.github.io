@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://poriz.github.io/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/about/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/dataengineering/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/camp/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/til/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/licenses/MIT/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/licenses/GPL-3.0/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/licenses/Apache-2.0/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/licenses/W3C-20150513/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/licenses/PRO/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://poriz.github.io/licenses/</loc>
+  <lastmod>2024-01-05T12:50:59+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
