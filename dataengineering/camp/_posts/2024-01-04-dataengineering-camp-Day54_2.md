@@ -149,5 +149,3 @@ models:
 ---
 ### 이전 포스트
 - [데브코스 54일차(2) - DBT (Data Build Tool)](https://poriz.github.io/dataengineering/camp/2024-01-04-dataengineering-camp-Day54_2/)
-<!-- ### 다음 포스트
--  -->
