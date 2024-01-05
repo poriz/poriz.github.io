@@ -47,9 +47,10 @@ Redshift에서의 사용을 위해서 dbt-redshift를 설치한다.
 - `pip3 install dbt-redshift`
 - 프로젝트 생성: `dbt init learn_dbt`
     - Redshift의 연결정보를 입력해준다.
-- ~/.dbt/profiles.yml : 연결정보들이 여기에 입력되어있다.
+- `~/.dbt/profiles.yml` : 연결정보들이 여기에 입력되어있다.
     - outputs 아래에 다수의 개발환경을 정의하고, 필요한 것들을 target에서 선택한다.
-- /dbt_project.yml : dbt 메인 환경 설정 파일
+- `/dbt_project.yml` : dbt 메인 환경 설정 파일
+
 ```yml
 name: 'learn_dbt'
 version: '1.0.0'
