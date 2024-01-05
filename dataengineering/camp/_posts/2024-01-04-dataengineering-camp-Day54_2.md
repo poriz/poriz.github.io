@@ -111,6 +111,7 @@ models:
   - incremental: 테이블로 저장하며, 새로운 데이터만 추가
   - ephemeral: CTE로 저장
 - 예제
+
 ```sql
 {% raw %}
 {{
@@ -134,6 +135,7 @@ models:
         - sync_all_columns
         - fail
 - incremental Table 주의: 조건을 걸어서 src할때마다 전체 테이블을 불러오는것이아니라, 새로생긴 테이블만 가져오도록 해야한다. (datestamp등을 사용하면된다!)
+
 ```sql
 {% raw %} {% if if_incremental() %} {% endraw %}
 	{% raw %} AND datestamp > (SELECT max(datestamp) from {{ this }}) {% endraw %}
