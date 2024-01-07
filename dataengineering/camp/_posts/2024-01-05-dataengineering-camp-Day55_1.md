@@ -10,7 +10,6 @@ categorys:
 
 # 데브코스 55일차(1) - DBT (Data Build Tool) - 2
 ## dbt Seeds
-
 : 작은 dimension테이블들을 csv파일로 생성 후 데이터 웨어하우스로 로드하는 방법
 
 ### 실습
@@ -23,7 +22,6 @@ categorys:
 ---
 
 ## dbt Sources
-
 : Staging 테이블 생성 시 입력 테이블들이 자주 변경되는 경우 models아래의 .sql파일들을 일일이 찾아 바꿔주어야한다. → 이것을 해결하기 위해 사용한 것이 Sources
 
 - 기본적으로 처음 입력이 되는 ETL 테이블을 대상으로 한다.
@@ -62,7 +60,6 @@ sources:
 ---
 
 ## dbt Snapshots
-
 : Dimension테이블은 변경이 자주 생길 수 있기 떄문에 테이블의 변화를 기록함으로써 관리한다.
 
 ### 처리 방법
@@ -118,7 +115,6 @@ SELECT * FROM {% raw %} {{ source('source_name', 'metadata') }} {% endraw %}
 ---
 
 ## dbt TEST
-
 : 데이터의 품질을 테스트하기 위해 사용한다.
 
 - Generic : 내장 일반 테스트
@@ -207,7 +203,6 @@ tests:
 ---
 
 ## dbt Expectations
-
 : Greate Expectations에서 영감을 받아 dbt용으로 만든 확장판이다.
 
 ### 설치
@@ -232,5 +227,6 @@ tests:
 ---
 ### 이전 포스트
 - [데브코스 54일차(2) - DBT (Data Build Tool)](https://poriz.github.io/dataengineering/camp/2024-01-04-dataengineering-camp-Day54_2/)
+
 ### 다음 포스트
 - [데브코스 55일차(2) - 데이터 카탈로그](https://poriz.github.io/dataengineering/camp/2024-01-05-dataengineering-camp-Day55_2/)
