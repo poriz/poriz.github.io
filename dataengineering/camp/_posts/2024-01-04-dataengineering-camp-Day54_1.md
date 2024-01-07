@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 데브코스 54일차(1) - Jinja, Dag Dependencies
+title: 데브코스 54일차(1) - Airflow 운영과 대안
 sitemap: false
 comments: true
 categorys:

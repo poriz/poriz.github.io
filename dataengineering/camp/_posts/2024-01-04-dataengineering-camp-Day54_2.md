@@ -1,14 +1,13 @@
 ---
 layout: post
-title: 데브코스 54일차(2) - Jinja, Dag Dependencies
-sitemap: false
+title: 데브코스 54일차(2) - DBT (Data Build Tool) - 1
 comments: true
 categorys:
   - dataengineering
   - camp
 ---
 
-# 데브코스 54일차(2) - DBT (Data Build Tool)
+# 데브코스 54일차(2) - DBT (Data Build Tool) - 1
 - 데이터 품질의 중요성 증대
     - 입출력 체크, 다양한 품질검사, 리니지 체크, 데이터 히스토리파악
     - 데이터 품질을 유지하는것은 비용,노력의 감소와 생산성 증대의 지름길이다.
