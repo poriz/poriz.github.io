@@ -75,13 +75,13 @@ task = BashOperator(
     - Reactive Trigger: B가 A가 끝나기를 대기, A는 이를 알지 못한다. → ExternalTaskSensor
 
 ### TriggerDagRunOperator
-
+{% raw %}
 - jinja 사용가능 params : trigger_dag_id, conf, execution_date
 - conf : 다음 DAG에 넘기고 싶은 정보. `conf = { ‘name’: ‘pori’ }`
     - 다음 DAG에서 jinja로 접근하기: `{{ dag_run.conf[”name”] }}`
     - PythonOperator에서 접근: `kwargs['dag_run'].conf.get('name')`
 - 참고: airflow.cfg의 `dag_run_conf_overrides_params`가 True로 되어야한다.
-
+{% endraw %}
 ```python
 # TriggerDagRunOperator
 trigger_task = TriggerDagRunOperator(
