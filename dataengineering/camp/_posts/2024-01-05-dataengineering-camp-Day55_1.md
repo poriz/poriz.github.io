@@ -78,7 +78,7 @@ sources:
 - snapshots 폴더에 적용할 파일을 편집한다.
 
 ```yaml
-{% raw %} {% snapshot scd_user_metadata %} {% endraw %}
+{% raw %}{% snapshot scd_user_metadata %}{% endraw %}
 {% raw %}{{
 config(
 	target_schema='source_name',
@@ -89,7 +89,7 @@ config(
 )
 }}{% endraw %}
 SELECT * FROM {% raw %} {{ source('source_name', 'metadata') }} {% endraw %}
-{% raw %} {% endsnapshot %} {% endraw %}
+{% raw %}{% endsnapshot %}{% endraw %}
 ```
 
 
@@ -97,14 +97,14 @@ SELECT * FROM {% raw %} {{ source('source_name', 'metadata') }} {% endraw %}
 
 ### 결과
 
-<기존>
+- 기존 테이블
 
 | EMPLOYEE_ID | JOB_CODE |
 | --- | --- |
 | E001 | J01 |
 | E002 | J02 |
 
-<변경> → J02가 변경됨.
+- 변경 → J02가 변경됨.
 
 | EMPLOYEE_ID | JOB_CODE | DBT_VALID_FROM | DBT_VALID_TO |
 | --- | --- | --- | --- |
