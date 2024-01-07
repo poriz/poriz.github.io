@@ -35,13 +35,13 @@ categorys:
 
 1. `models/sources.yml` 파일 생성하기
 2. models 아래의 `.sql` 파일들을 적절하게 수정해야한다.
-    - `FROM Schema.table` ⇒ {% raw % }`FROM {{ source ("schema","table") }}` {% endraw %}
+    - `FROM Schema.table` ⇒ {% raw %}`FROM {{ source ("schema","table") }}` {% endraw %}
     - 보통 src에서 다음 형태를 많이 사용하기 때문에 src위주로 변경한다.
 - Sources 최신성 체크하기. (Freshness)
     - `dbt source freshness` 명령으로 수행한다.
 - `sources.yml` 코드
 
-{% raw % } 
+
 
 ```yaml
 version: 2
@@ -58,8 +58,6 @@ sources:
 					warn_after: { count: 1,period: hour }
 					error_after: { count: 24,period: hour }
 ```
-
-{% endraw %}
 
 ---
 
@@ -79,11 +77,9 @@ sources:
 
 - snapshots 폴더에 적용할 파일을 편집한다.
 
-{% raw %}
-
 ```yaml
-{% snapshot scd_user_metadata %}
-{{
+{% raw %} {% snapshot scd_user_metadata %} {% endraw %}
+{% raw %}{{
 config(
 	target_schema='source_name',
 	unique_key='user_id',
@@ -91,12 +87,11 @@ config(
 	updated_at='updated_at',
 	invalidate_hard_deletes=True
 )
-}}
-SELECT * FROM {{ source('source_name', 'metadata') }}
-{% endsnapshot %}
+}}{% endraw %}
+SELECT * FROM {% raw %} {{ source('source_name', 'metadata') }} {% endraw %}
+{% raw %} {% endsnapshot %} {% endraw %}
 ```
 
-{% endraw %}
 
 - `dbt snapshot` 명령으로 실행
 
@@ -154,7 +149,6 @@ tests:
 - `tests/test_table_name.sql` 생성
 - pk 테스트 : 테이블의 pk가 unique한지 확인해보는 코드
 
-{% raw %}
 ```yaml
 SELECT
 *
@@ -162,14 +156,14 @@ FROM (
 SELECT
 user_id, COUNT(1) cnt
 FROM
-	{{ ref("table_name") }}
+	{% raw %} {{ ref("table_name") }} {% endraw %}
 	GROUP BY 1
 	ORDER BY 2 DESC
 	LIMIT 1
 )
 WHERE cnt > 1
 ```
-{% endraw %}
+
 
 ### Test 실행
 
