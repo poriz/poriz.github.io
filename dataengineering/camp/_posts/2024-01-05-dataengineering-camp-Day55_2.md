@@ -57,3 +57,6 @@ categorys:
 ---
 ### 이전 포스트
 - [데브코스 55일차(1) - DBT (Data Build Tool) - 2](https://poriz.github.io/dataengineering/camp/2024-01-05-dataengineering-camp-Day55_1/)
+
+### 다음 포스트
+- [데브코스 3차 프로젝트 (1)](https://poriz.github.io/dataengineering/camp/2024-01-05-dataengineering-camp-project3_1/)
