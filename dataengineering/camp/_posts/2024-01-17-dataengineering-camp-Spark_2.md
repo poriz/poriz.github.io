@@ -171,7 +171,10 @@ spark.stop()
 
 ---
 ### 이전 포스트
-- [빅데이터 처리 시스템, Hadoop](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-Spark_1/)
+- [빅데이터 처리 시스템, Hadoop](https://poriz.github.io/dataengineering/camp/2024-01-16-dataengineering-camp-Spark_1/)
+
+### 다음 포스트
+- [Spark - 실습 정리](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-Spark_3/)
 
 
 

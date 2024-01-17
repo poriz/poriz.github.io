@@ -142,7 +142,7 @@ categorys:
 
 ---
 ### 이전 포스트
-- [데브코스 3차 프로젝트 (2)](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-project3_2/)
+- [데브코스 3차 프로젝트 (2)](https://poriz.github.io/dataengineering/camp/2024-01-15-dataengineering-camp-project3_2/)
 
 ### 다음 포스트
 - [Spark](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-Spark_2/)
