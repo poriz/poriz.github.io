@@ -51,6 +51,7 @@ DAG의 테스트를 위해 로컬에서 Airflow를 돌리다보니 환경설정�
         "conn_type": "type",
         "values": "value"
         }'
+        AIRFLOW_VAR_EXAMPLE="VALUE"
         ```
     3. docker-compose.yml에 env 설정하기
         ```yml
@@ -61,3 +62,6 @@ DAG의 테스트를 위해 로컬에서 Airflow를 돌리다보니 환경설정�
 ---
 ### 이전 포스트
 - [데브코스 55일차(2) - 데이터 카탈로그](https://poriz.github.io/dataengineering/camp/2024-01-05-dataengineering-camp-Day55_2/)
+
+### 다음 포스트
+- [데브코스 3차 프로젝트 (2)](https://poriz.github.io/dataengineering/camp/2024-01-09-dataengineering-camp-project3_2/)
