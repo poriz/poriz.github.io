@@ -115,7 +115,8 @@ df_groups = df.groupBy("cust_id")\
 ### Redshift와의 연결 구성하기
 
 - redshift-driver 다운로드하기.
-: pyspark의 경로로 이동해서 aws의 driver를 다운로드 받는 코드이다. 버전이 변경 될 수 있으니 파이썬과 드라이버의 버전에 주의해야한다. <br>
+: pyspark의 경로로 이동해서 aws의 driver를 다운로드 받는 코드이다. 버전이 변경 될 수 있으니 파이썬과 드라이버의 버전에 주의해야한다.
+
 참고) https://github.com/aws/amazon-redshift-jdbc-driver
 
 ```python
