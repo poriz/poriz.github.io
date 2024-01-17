@@ -86,13 +86,13 @@ categorys:
 ### YARN의 동작 방식
 
 1. 실행 코드와 환경 정보를 Resource Manager에게 제출
-    1. 실행에 필요한 파일들은 application ID에 해당하는 HDFS 폴더에 미리 복사된다.
+    -  실행에 필요한 파일들은 application ID에 해당하는 HDFS 폴더에 미리 복사된다.
 2. Resource Manager는 Node Manager를 통해서이를 실행하기위한 Master를 생성한다. (Application Master)
-    1. Application Master는 프로그램마다 하나씩 할당되는 프로그램 마스터이다.
+    -  Application Master는 프로그램마다 하나씩 할당되는 프로그램 마스터이다.
 3. Application Master는 Resource Manager를 통해 코드 실행에 필요한 리소스를 받아온다.
-    1. Resource Manager는 적절하게 리소스ㅌ를 할당해줌
+    -  Resource Manager는 적절하게 리소스ㅌ를 할당해줌
 4. Application Master는 Node Manager를 통해서 컨테이너들을 받아 코드를 실행한다. (Task)
-    1. 실행에 필요한 파일들은 HDFS에서 Container가 있는 서버로 먼저 복사된다.
+    -  실행에 필요한 파일들은 HDFS에서 Container가 있는 서버로 먼저 복사된다.
 5. task들은 주기적으로 자신의 상황을 Application Master에게 업데이트한다.(heartbeat)
 - YARN Application마다 하나의 Application Master가 생긴다.
 
