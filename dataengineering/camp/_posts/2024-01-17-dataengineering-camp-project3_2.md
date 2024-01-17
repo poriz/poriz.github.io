@@ -93,8 +93,7 @@ categorys:
 
 
 ## 코드
-자세한 코드는 GIT REPOSITORY를 참고해주세요. </br>
-: https://github.com/K-bike-DE/airflow_dev
+자세한 코드는 GIT REPOSITORY를 참고해주세요!: https://github.com/K-bike-DE/airflow_dev
 
 ---
 ### 이전 포스트
