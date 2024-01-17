@@ -99,5 +99,8 @@ categorys:
 ### 이전 포스트
 - [데브코스 3차 프로젝트 (1)](https://poriz.github.io/dataengineering/camp/2024-01-09-dataengineering-camp-project3_1/)
 
+### 다음 포스트
+- [빅데이터 처리 시스템, Hadoop](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-Spark_1/)
+
 
 
