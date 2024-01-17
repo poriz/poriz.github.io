@@ -98,7 +98,7 @@ categorys:
 
 ---
 ### 이전 포스트
-- [데브코스 3차 프로젝트 (1)](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-project3_1/)
+- [데브코스 3차 프로젝트 (1)](https://poriz.github.io/dataengineering/camp/2024-01-09-dataengineering-camp-project3_1/)
 
 
 
