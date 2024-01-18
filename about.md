@@ -8,8 +8,8 @@ redirect_from:
 
 # About
 
-<!--author-->
+![about](/assets/img/blog/taesujang.png)
 
-## 수정 예정입니다.
+
 
 
