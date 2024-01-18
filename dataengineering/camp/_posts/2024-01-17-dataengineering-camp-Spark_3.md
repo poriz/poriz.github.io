@@ -145,5 +145,7 @@ df_user_session_channel = spark.read \
 ### 이전 포스트
 - [spark](https://poriz.github.io/dataengineering/camp/2024-01-17-dataengineering-camp-Spark_2/)
 
+### 다음 포스트
+- [Spark - SparkSQL, Hive-metaStore](https://poriz.github.io/dataengineering/camp/2024-01-18-dataengineering-camp-Spark_4/)
 
 
