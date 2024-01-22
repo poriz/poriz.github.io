@@ -91,7 +91,7 @@ df = spark.read. \
 - [Spark - SparkSQL, Hive-metaStore](https://poriz.github.io/dataengineering/camp/2024-01-18-dataengineering-camp-Spark_4/)
 
 ### 다음 포스트
-- [kafka - 실시간 데이터 개요](https://poriz.github.io/dataengineering/camp/2024-01-22-dataengineering-camp-kafka_1/)
+- [kafka - 실시간 데이터 개요](https://poriz.github.io/dataengineering/camp/2024-01-22-dataengineering-camp-Kafka_1/)
 
 
 
