@@ -1,13 +1,13 @@
 ---
 layout: post
-title: kafka - 실시간 데이터 개요
+title: Kafka - 실시간 데이터 개요
 sitemap: false
 comments: true
 categorys:
   - dataengineering
   - camp
 ---
-# kafka - 실시간 데이터 개요
+# Kafka - 실시간 데이터 개요
 
 ## 데이터 처리의 발전 단계
 
@@ -77,6 +77,9 @@ categorys:
 ---
 ### 이전 포스트
 - [Spark - file_format](https://poriz.github.io/dataengineering/camp/2024-01-19-dataengineering-camp-Spark_5/)
+
+### 다음 포스트
+- [Kafka - 소개 & 개념](https://poriz.github.io/dataengineering/camp/2024-01-24-dataengineering-camp-Kafka_2/)
 
 
 
