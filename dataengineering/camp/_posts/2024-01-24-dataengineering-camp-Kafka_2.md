@@ -134,5 +134,7 @@ Spark Streaming으로 topic을 처리하는 경우에 micro batch에 가까우�
 ---
 ### 이전 포스트
 - [Kafka - 실시간 데이터 개요](https://poriz.github.io/dataengineering/camp/2024-01-22-dataengineering-camp-Kafka_1/)
+### 다음 포스트
+- - [Kafka - 기본 프로그래밍](https://poriz.github.io/dataengineering/camp/2024-01-25-dataengineering-camp-Kafka_3/)
 
 
